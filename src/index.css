@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: #fae7f3;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #4942e4;
+}
+
+.btn-outlined {
+  @apply border rounded-xl transition-all ease-in-out duration-500 shadow-md;
+}
+
+.btn-outline-primary {
+  @apply border-primary text-primary hover:bg-primary hover:text-lighten;
+}
+
+.btn-outline-secondary {
+  @apply border-secondary text-secondary hover:bg-secondary hover:text-lighten;
+}
+
+.btn-outline-light {
+  @apply border-lighten text-lighten hover:bg-primary hover:border-primary;
+}
+
+.btn-primary {
+  @apply bg-primary rounded-xl shadow-md text-white hover:bg-secondary transition-colors ease-linear duration-500;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary shadow hover:bg-gray-100 transition-colors ease-linear duration-500;
+}
